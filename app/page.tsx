@@ -24,9 +24,6 @@ export default function Home() {
             showCursor
             cursorCharacter="|"
             deletingSpeed={20}
-            variableSpeedEnabled={false}
-            variableSpeedMin={60}
-            variableSpeedMax={120}
             cursorBlinkDuration={1.2}
           />
           </h1>
