@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Funnel_Sans} from "next/font/google";
 import "./globals.css";
+import { APP_NAME, APP_DESCRIPTION, SERVER_URL } from "@/lib/constants";
+
 
 const funnelSans = Funnel_Sans({
   variable: "--font-funnel-sans",
@@ -9,8 +11,12 @@ const funnelSans = Funnel_Sans({
 
 
 export const metadata: Metadata = {
-  title: "Andrés Conde Viajes",
-  description: "Sitio web de la empresa de transportes Andrés Conde Viajes, hecha con next.js",
+  title: {
+    template: `%s | Andrés Conde Viajes` ,
+    default: APP_NAME,
+  },
+  description: `${APP_DESCRIPTION}`,
+  metadataBase: new URL(SERVER_URL)
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
