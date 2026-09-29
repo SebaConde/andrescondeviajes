@@ -32,9 +32,6 @@ const HeroSection = () => {
 
       <div className="relative mx-auto w-full max-w-6xl px-4 pt-32 pb-20 sm:px-6">
         <SpeedLines className="mb-6" />
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-brand-soft">
-          Empresa de ómnibus
-        </p>
         <h1 className="max-w-3xl font-display text-4xl font-black italic uppercase leading-tight text-white sm:text-6xl lg:text-7xl">
           {/* Viajá seguro,
           <br /> */}

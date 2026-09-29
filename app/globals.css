@@ -2,9 +2,9 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-body {
+/* body {
   font-family: var(--font-funnel-sans), sans-serif;
-}
+} */
 
 @custom-variant dark (&:is(.dark *));
 
